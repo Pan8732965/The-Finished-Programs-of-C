@@ -10,4 +10,4 @@ Besides I take this program for reference on [here](https://www.includehelp.com/
 Pictures below:
 ![/images/switch-cal](https://user-images.githubusercontent.com/62552984/85575203-f1a27a80-b669-11ea-952d-ff1ffdc7d56d.png)
 
-**This is what the terminal look like.
+**Here is the [video](https://www.youtube.com/watch?v=d75KrdJ9A_Q&loop=0)**
