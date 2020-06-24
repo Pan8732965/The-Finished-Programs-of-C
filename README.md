@@ -8,6 +8,6 @@ In this program,I use switch statements for the main using and use do while to e
 Besides I take this program for reference on [here](https://www.includehelp.com/c-programs/calculator-using-switch.aspx?fbclid=IwAR1Bf5CgWmm88EegSnhegBDyRw_NSQem6U2cyz3asBvLkf3hGh4bNoqZvq4)
 ,**but i just take reference.I don't all copy from this,i also do some changes of this code as you compare the code with between mine and his.**
 Pictures below:
-?img src="/images/switch-cal.png" width="100" ?
+![/images/switch-cal](https://user-images.githubusercontent.com/62552984/85575203-f1a27a80-b669-11ea-952d-ff1ffdc7d56d.png)
 
 **This is what the terminal look like.
