@@ -6,5 +6,4 @@ Fist this program is called "Better Calculator". Why I called this name? Because
 ## The process of the calculator program
 In this program,I use switch statements for the main using and use do while to ensure the user to use this calculator or not.Besides I take this program for reference on [here](https://www.includehelp.com/c-programs/calculator-using-switch.aspx?fbclid=IwAR1Bf5CgWmm88EegSnhegBDyRw_NSQem6U2cyz3asBvLkf3hGh4bNoqZvq4)
 ,**but i just take reference.I don't all copy from this,i also do some good changes of this code as you compare the code with between mine and his.**
-![switch](/images/switch-cal.png)
-Format: ![Alt Text](url)
+?img src="images/switch-cal.png" ?
