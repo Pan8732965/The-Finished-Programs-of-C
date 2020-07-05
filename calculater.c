@@ -60,6 +60,5 @@ int main()
                     scanf(" %c", &option);
     } while (option == 'y');
 
-    freopen("output.txt","w",stdout);
     return 0;
 }
