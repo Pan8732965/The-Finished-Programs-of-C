@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
+#include <ctype.h>
 
 void guessing();
 void line();
@@ -20,6 +21,11 @@ int main()
         guessing();
         printf("Do you want to play again(yes enter y./no enter n.): "); //play again or not.
         scanf(" %c", &option);
+        if ((isdigit(option)) || (option != 'n' && option != 'y'))
+        {
+            line();
+            printf("Error...Please enter right.\nOr try again.\n");
+        }
         line();
     } while (option == 'y'); //when while set up,carry out "do".
     printf("See you next time.\n");
@@ -64,7 +70,7 @@ void line(void)
 }
 void loading_effect(void)
 { //take reference on stackoverflow.
-//https://stackoverflow.com/questions/51983405/loading-dots-effect-with-printf-in-c
+    //https://stackoverflow.com/questions/51983405/loading-dots-effect-with-printf-in-c
     for (int loop = 0; loop < 1; ++loop)
     {
         for (int each = 0; each < 4; ++each)

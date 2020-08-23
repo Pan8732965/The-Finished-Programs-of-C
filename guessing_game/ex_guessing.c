@@ -54,3 +54,5 @@ int main()
         printf("Ok, I am thinking of a number. Try to guess it.\n");
     }
 }
+//from:
+//https://stackoverflow.com/questions/44743212/c-programming-guessing-game

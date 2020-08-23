@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <unistd.h>
+#include <ctype.h>
 
 void guessing(); //中文使用者注意:compiler時請使用big5編碼，至於要編輯請用UTF-8.否則將會呈現亂嗎。
 void line();
@@ -20,6 +21,11 @@ int main()
         guessing();
         printf("你要在玩一次嗎?(要打y/不要打n): "); //是否要重玩.
         scanf(" %c", &option);
+        if ((isdigit(option)) || (option != 'n' && option != 'y'))
+        {
+            line();
+            printf("Error錯誤.請確認是否輸入正確...\n或者在試一次.\n");
+        }
         line();
     } while (option == 'y'); //當while成立，執行do.
     printf("下次再見Bye Bye~\n");

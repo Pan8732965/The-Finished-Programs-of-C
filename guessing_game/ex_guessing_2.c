@@ -57,3 +57,5 @@ void guessing(){               //guessing function
     }while (guess != answer);
     return;
 }
+//this code is from my question on stackoverflow.
+//https://stackoverflow.com/questions/63518256/i-want-to-make-an-error-information-when-user-type-the-wrong-factors/63518644#63518644
