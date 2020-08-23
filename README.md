@@ -20,9 +20,9 @@ Pictures below:
 Let me introduce my first game here❗  
 As the name said.This is a "simple" program can let users play guessing game.I added some interesting elements in here just to provide users a more intuitively environment.  
 Also I provided two languages(english and traditional chinese)to give two playing feelings in this game.
-- English:
+- English:  
 <img src="https://user-images.githubusercontent.com/62552984/90979568-79cccf80-e588-11ea-917a-c90dc3415f3b.png" width="400" height="260">  
-- Chinese:
+- Chinese:  
 <img src="https://user-images.githubusercontent.com/62552984/90979700-77b74080-e589-11ea-8c35-c9e3ead02755.png" height="300">  
 
 In the end,hope you guys enjoy this game.📣
