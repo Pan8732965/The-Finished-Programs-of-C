@@ -31,9 +31,9 @@ In this program,I mainly use function to simplify my code(that is a big help for
 For example:
 1. do while:
 <img src="https://user-images.githubusercontent.com/62552984/90978699-48e99c00-e582-11ea-9b27-402f02c1e7f3.png"
-width="1036" height="140" />
+width="702" height="200" />
 2. time(to make the number is actually random):
-<img src="https://user-images.githubusercontent.com/62552984/90978846-6408db80-e583-11ea-9f1c-24deab4a16f0.png" width="1036" height="40">
+<img src="https://user-images.githubusercontent.com/62552984/90978846-6408db80-e583-11ea-9f1c-24deab4a16f0.png" width="500" height="50">
 3. functions(helping me printing line.✍️):
 <img src="https://user-images.githubusercontent.com/62552984/90978949-00cb7900-e584-11ea-9989-f9599b45184e.png" width="300" height="80">  
 And lots of...
