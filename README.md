@@ -26,6 +26,7 @@ Also I provided two languages(english and traditional chinese)to give two playin
 > Chinese:  
 <img src="https://user-images.githubusercontent.com/62552984/90979700-77b74080-e589-11ea-8c35-c9e3ead02755.png" height="300">  
 ⚠️Chinese users:  
+
 When you want to compiler please use big5,and use UTF-8 when editing.  
 Otherwise;you can't read it.
 In the end,hope you guys enjoy this game.📣
