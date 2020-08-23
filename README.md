@@ -4,7 +4,7 @@ This repo includes every finished c programs that code by myself and the files t
 Let me introduce the first work here❗  
 Fist this program is called "Better Calculator". Why I called this name? Because it can get the "%"number.  
 Also it contains the operators of "+,-,*,/.%".But a bad thing is that C can't make a gui to go with this program.Or there is other way that I don't know.❓
-## 🛠 The process of the calculator program
+### 🛠 The process of the calculator program
 In this program,I use switch statements for the main using and use do while to ensure the user to use this calculator or not.  
 Besides I take this program for reference on [here](https://www.includehelp.com/c-programs/calculator-using-switch.aspx?fbclid=IwAR1Bf5CgWmm88EegSnhegBDyRw_NSQem6U2cyz3asBvLkf3hGh4bNoqZvq4)
 .  
@@ -19,4 +19,4 @@ Pictures below:
 ## ✔️Guessing Game introduction🎮
 Let me introduce my first game here❗  
 As the name said.This is a simple program can let users play guessing game.I added some interesting elements in here just to provide users a more intuitively feeling. 
-## 🛠 The process of the Guessing Game program
+### 🛠 The process of the Guessing Game program
