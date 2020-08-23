@@ -24,7 +24,8 @@ Also I provided two languages(english and traditional chinese)to give two playin
 <img src="https://user-images.githubusercontent.com/62552984/90979568-79cccf80-e588-11ea-917a-c90dc3415f3b.png" width="400" height="260">  
 > Chinese:  
 <img src="https://user-images.githubusercontent.com/62552984/90979700-77b74080-e589-11ea-8c35-c9e3ead02755.png" height="300">  
-
+⚠️Chinese users:When you want to compiler please use big5,and use UTF-8 when editing.  
+Otherwise;you can't read it.
 In the end,hope you guys enjoy this game.📣
 ### 🛠 The process of the Guessing Game program
 In this program,I mainly use function to simplify my code(that is a big help for me).And use lots of different functions to make the program better.  
@@ -40,5 +41,7 @@ And lots of...
 
 In the end,I especially like this Loading effect.  
 This is a cool effect can actually take users into the game.👇
-<img src="https://user-images.githubusercontent.com/62552984/90979371-39b91d00-e587-11ea-8a19-41e4220b98f7.gif" width="490" height="200">
-
+<img src="https://user-images.githubusercontent.com/62552984/90979371-39b91d00-e587-11ea-8a19-41e4220b98f7.gif" width="490" height="200">  
+And here is the video:
+> [video(english)](https://www.youtube.com/watch?v=AdzyhG-LXro)
+> [video(Chinese)](https://www.youtube.com/watch?v=H0fb-y1yh28&t=49s)
