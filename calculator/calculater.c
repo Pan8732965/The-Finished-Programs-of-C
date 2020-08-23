@@ -10,17 +10,17 @@ int main()
 
     do
     {
-        printf("----------³o¬O¤@­Ó­pºâ¾÷µ{¦¡---------\n");
+        printf("----------é€™æ˜¯ä¸€å€‹è¨ˆç®—æ©Ÿç¨‹å¼---------\n");
         printf("------This is a calculator program---\n");
-                printf("½Ğ¿é¤J²Ä¤@­Ó¼Æ¦r: \n");
+                printf("???J??@???r: \n");
                 printf("Please enter the first number: \n");
                 scanf("%lf", &num1);
         printf("----------------------------\n");
-                printf("½Ğ¿é¤J¹Bºâ¤l(+,-,*,/,'%%'¨ú¾l¼Æ): \n");
+                printf("???J?B??l(+,-,*,/,'%%'???l??): \n");
                 printf("Please enter the operator(+,-,*,/,'%%'): ");
                 scanf(" %c", &oper);
         printf("----------------------------\n");
-                printf("½Ğ¿é¤J²Ä¤G­Ó¼Æ¦r: \n");
+                printf("???J??G???r: \n");
                 printf("Please enter the third number: \n");
                 scanf("%lf", &num2);
 
@@ -49,13 +49,13 @@ int main()
             break;
         default:
             printf("----------------------------\n");
-                    printf("µL®Äªº¹Bºâ...½Ğ¦A¤@¦¸ \n");
+                    printf("?L????B??...??A?@?? \n");
                     printf("Error...try again\n");
         }
 
         printf("----------------------------\n");
-            printf("µ²ªGResult: %.1lf %c %.1lf = %.2f\n", num1, oper, num2, result);
-                printf("±z­n¦bÄ~Äò¶Ü?(¬O½Ğ¿é¤Jy/§_«h¿é¤Jn): \n");
+            printf("???GResult: %.1lf %c %.1lf = %.2f\n", num1, oper, num2, result);
+                printf("?z?n?b?~????(?O???Jy/?_?h??Jn): \n");
                         printf("Do you still want to continue?(Yes enter y/No enter n)\n");
                     scanf(" %c", &option);
     } while (option == 'y');
