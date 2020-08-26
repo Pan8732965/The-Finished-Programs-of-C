@@ -12,16 +12,16 @@ int main()
     {
         printf("----------這是一個計算機程式---------\n");
         printf("------This is a calculator program---\n");
-                printf("???J??@???r: \n");
+                printf("請輸入第一個數字: \n");
                 printf("Please enter the first number: \n");
                 scanf("%lf", &num1);
         printf("----------------------------\n");
-                printf("???J?B??l(+,-,*,/,'%%'???l??): \n");
+                printf("請輸入運算子(+,-,*,/,'%%'取餘數): \n");
                 printf("Please enter the operator(+,-,*,/,'%%'): ");
                 scanf(" %c", &oper);
         printf("----------------------------\n");
-                printf("???J??G???r: \n");
-                printf("Please enter the third number: \n");
+                printf("請輸入第二個數字: \n");
+                printf("Please enter the second number: \n");
                 scanf("%lf", &num2);
 
         result = 0;
@@ -49,13 +49,13 @@ int main()
             break;
         default:
             printf("----------------------------\n");
-                    printf("?L????B??...??A?@?? \n");
+                    printf("錯誤...請重試 \n");
                     printf("Error...try again\n");
         }
 
         printf("----------------------------\n");
-            printf("???GResult: %.1lf %c %.1lf = %.2f\n", num1, oper, num2, result);
-                printf("?z?n?b?~????(?O???Jy/?_?h??Jn): \n");
+            printf("結果Result: %.1lf %c %.1lf = %.2f\n", num1, oper, num2, result);
+                printf("您要再繼續嗎?(要輸入y/否則n): \n");
                         printf("Do you still want to continue?(Yes enter y/No enter n)\n");
                     scanf(" %c", &option);
     } while (option == 'y');
