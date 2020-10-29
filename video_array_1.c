@@ -45,5 +45,6 @@ int main(){
             printf("%d\n",num[max_i]);
         }
     }
+    //https://www.youtube.com/watch?v=EfNPCgFrR4s&list=PLY_qIufNHc293YnIjVeEwNDuqGo8y2Emx&index=123
         return 0;
 }
