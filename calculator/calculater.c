@@ -25,6 +25,7 @@ int main()
                 scanf("%lf", &num2);
 
         result = 0;
+
         
         switch (oper)
         {
@@ -58,6 +59,7 @@ int main()
                 printf("您要再繼續嗎?(要輸入y/否則n): \n");
                         printf("Do you still want to continue?(Yes enter y/No enter n)\n");
                     scanf(" %c", &option);
+                    
     } while (option == 'y');
 
     return 0;

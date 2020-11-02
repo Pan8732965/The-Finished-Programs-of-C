@@ -10,42 +10,37 @@ int main()
 	char option;
 	do
 	{
-		try
-	{
 			line();
-		cout << "***æ­¡è¿Žä½¿ç”¨æ­¤ç¨‹å¼!***\né€™æ˜¯ä¸€å€‹è¨ˆç®—ä½ çš„BMIçš„ç¨‹å¼!\n";
+		cout << "***Åwªï¨Ï¥Î¦¹µ{¦¡!***\n³o¬O¤@­Ó­pºâ§AªºBMIªºµ{¦¡!\n";
 		line();
-		cout << "è«‹è¼¸å…¥ä½ çš„é«”é‡: ";
+		cout << "½Ð¿é¤J§AªºÅé­«: ";
 		cin >> weight;
-		cout << "è«‹è¼¸å…¥èº«é«˜(å…¬åˆ†): ";
+		cout << "½Ð¿é¤J¨­°ª(¤½¤À): ";
 		cin >> tall;
-		}
-		catch(exception e){
-			cout<<"error";
-		}
-		tall = tall / 100; //å…¬åˆ†è½‰å…¬å°º
+
+		tall = tall / 100; //¤½¤ÀÂà¤½¤Ø
 		tall = tall * tall; 
 		BMI = weight / tall;
-		cout << "ä½ çš„BMIæ˜¯:" << BMI << endl;
+		cout << "§AªºBMI¬O:" << BMI << endl;
 		line();
 		if (BMI < 18.5)
 		{
-			cout << "é«”é‡éŽè¼•\n";
+			cout << "Åé­«¹L»´\n";
 		}
 		else if (BMI >= 18.5 && BMI < 24)
 		{
-			cout << "æ­£å¸¸\n";
+			cout << "¥¿±`\n";
 		}
 		else if (BMI >= 24 && BMI <= 35)
 		{
-			cout << "ç•°å¸¸ç¯„åœ\n";
+			cout << "²§±`½d³ò\n";
 		}
 		else
 		{
-			cout << "éŒ¯èª¤Error(è«‹è¼¸å…¥æ­£ç¢º!)";
+			cout << "¿ù»~Error(½Ð¿é¤J¥¿½T!)\n";
 		}
 		line();
-		cout << "è¦ç¹¼çºŒå—Ž?:";
+		cout << "­nÄ~Äò¶Ü?(¬O¿é¤Jy/§_¿é¤Jn):";
 		cin >> option;
 	} while (option != 'n');
 
