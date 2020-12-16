@@ -37,29 +37,40 @@ void guessing()
 {                              //guessing function
     srand(time(0));            //not everytime is the same number.
     int answer = rand() % 100; //range at 0~99
-    int guess;
+    int guess[5]={0};
     int count = 5;
+    int i=0;
     loading_effect();
     do
     {
         line();
+        printf("%d",answer);
         printf("Please enter your number to guess(0~99): ");
-        scanf("%d", &guess);
+        scanf("%d", &guess[i]);  //enter numbers into guess array
         count--; //5 times ~ 0;
         line();
-        if (guess > answer)
+        if (guess[i] > answer)
         {
             printf("The number is smaller.  <---\nYou have (%d) times to guess.\n", count);
         }
-        else if (guess < answer)
+        else if (guess[i] < answer)
         {
             printf("The number is bigger.  <---\nYou have (%d) times to guess.\n", count);
         }
-        else if (guess == answer)
+        else if (guess[i] == answer)
         {
             printf("Nice.Got it! \n");
+            break;
         }
-    } while (guess != answer && count > 0); //the round ended.
+        i++;//plus the number i after the if statement
+    } while (guess[i]!=answer && count > 0); //the round ended.
+    //---
+    printf("Your answer:{ ");
+    for(i=0;i<=4;i++){
+            printf("%d ",guess[i]);
+    }
+    printf("}\n");
+    //---
     printf("-----------------\nThe answer is %d\n", answer);
     return;
 }

@@ -4,63 +4,73 @@
 #include <unistd.h>
 #include <ctype.h>
 
-void guessing(); //ä¸­æ–‡ä½¿ç”¨è€…æ³¨æ„:compileræ™‚è«‹ä½¿ç”¨big5ç·¨ç¢¼ï¼Œè‡³æ–¼è¦ç·¨è¼¯è«‹ç”¨UTF-8.å¦å‰‡å°‡æœƒå‘ˆç¾äº‚å—ã€‚
+void guessing(); //¤¤¤å¨Ï¥ÎªÌª`·N:compiler®É½Ğ¨Ï¥Îbig5½s½X¡A¦Ü©ó­n½s¿è½Ğ¥ÎUTF-8.§_«h±N·|§e²{¶Ã¶Ü¡C
 void line();
 void loading_effect();
 
 int main()
 {
     line();
-    printf("æ­¡è¿ä¾†åˆ°çŒœæ•¸å­—éŠæˆ²!\n");      //æ­¡è¿å€åŸŸ
-    printf("æ¯å›åˆæœ‰(5)æ¬¡çš„çŒœæ¸¬æ©Ÿæœƒ.\n"); //welcome
-    printf("æˆ‘å€‘å°±ç›´æ¥é–‹å§‹å§.\n");        //welcome
+    printf("Åwªï¨Ó¨ì²q¼Æ¦r¹CÀ¸!\n");      //Åwªï°Ï°ì
+    printf("¨C¦^¦X¦³(5)¦¸ªº²q´ú¾÷·|.\n"); //welcome
+    printf("§Ú­Ì´Nª½±µ¶}©l§a.\n");        //welcome
     line();
     char option;
     do
     {
         guessing();
-        printf("ä½ è¦åœ¨ç©ä¸€æ¬¡å—?(è¦æ‰“y/ä¸è¦æ‰“n): "); //æ˜¯å¦è¦é‡ç©.
+        printf("§A­n¦bª±¤@¦¸¶Ü?(­n¥´y/¤£­n¥´n): "); //¬O§_­n­«ª±.
         scanf(" %c", &option);
         if ((isdigit(option)) || (option != 'n' && option != 'y'))
         {
             line();
-            printf("ErroréŒ¯èª¤.è«‹ç¢ºèªæ˜¯å¦è¼¸å…¥æ­£ç¢º...\næˆ–è€…åœ¨è©¦ä¸€æ¬¡.\n");
+            printf("Error¿ù»~.½Ğ½T»{¬O§_¿é¤J¥¿½T...\n©ÎªÌ¦b¸Õ¤@¦¸.\n");
         }
         line();
-    } while (option == 'y'); //ç•¶whileæˆç«‹ï¼ŒåŸ·è¡Œdo.
-    printf("ä¸‹æ¬¡å†è¦‹Bye Bye~\n");
+    } while (option == 'y'); //·íwhile¦¨¥ß¡A°õ¦ædo.
+    printf("¤U¦¸¦A¨£Bye Bye~\n");
     line();
     return 0;
 }
 
 void guessing()
-{                              //guessing å‡½å¼
-    srand(time(0));            //ä¸è¦æ¯æ¬¡éƒ½æ˜¯ä¸€æ¨£çš„æ•¸å­—.
-    int answer = rand() % 100; //ç¯„åœåœ¨ 0~99
-    int guess;
+{                              //guessing ¨ç¦¡
+    srand(time(0));            //¤£­n¨C¦¸³£¬O¤@¼Ëªº¼Æ¦r.
+    int answer = rand() % 100; //½d³ò¦b 0~99
+    int guess[5]={0};
     int count = 5;
+    int i=0;
     loading_effect();
     do
     {
         line();
-        printf("è«‹è¼¸å…¥ä½ è¦çŒœçš„æ•¸å­—(ç¯„åœåœ¨0~99): ");
-        scanf("%d", &guess);
-        count--; //5æ¬¡ åˆ° ~ 0æ¬¡;
+        printf("½Ğ¿é¤J§A­n²qªº¼Æ¦r(½d³ò¦b0~99): ");
+        scanf("%d", &guess[i]);
+        count--; //5¦¸ ¨ì ~ 0¦¸;
         line();
-        if (guess > answer)
+        if (guess[i] > answer)
         {
-            printf("æ•¸å­—åœ¨å°ä¸€é».  <---\né‚„å‰©(%d)æ¬¡çš„æ©Ÿæœƒå¯ä»¥çŒœ.\n", count);
+            printf("¼Æ¦r¦b¤p¤@ÂI.  <---\nÁÙ³Ñ(%d)¦¸ªº¾÷·|¥i¥H²q.\n", count);
         }
-        else if (guess < answer)
+        else if (guess[i] < answer)
         {
-            printf("æ•¸å­—åœ¨å¤§ä¸€é».  <---\né‚„å‰©(%d)æ¬¡çš„æ©Ÿæœƒå¯ä»¥çŒœ.\n", count);
+            printf("¼Æ¦r¦b¤j¤@ÂI.  <---\nÁÙ³Ñ(%d)¦¸ªº¾÷·|¥i¥H²q.\n", count);
         }
-        else if (guess == answer)
+        else if (guess[i] == answer)
         {
-            printf("è®šå•¦!çŒœåˆ°äº†.\n");
+            printf("Æg°Õ!²q¨ì¤F.\n");
+            break;
         }
-    } while (guess != answer && count > 0); //å›åˆçµæŸ.
-    printf("-----------------\nç­”æ¡ˆæ˜¯:%d\n", answer);
+        i++;
+    } while (guess[i] != answer && count > 0); //¦^¦Xµ²§ô.
+    //---------
+    printf("±zªºµª®×:{");
+    for(i=0;i<=4;i++){
+        printf("%d ",guess[i]);
+    }
+    printf("}\n");
+    //---------
+    printf("-----------------\nµª®×¬O:%d\n", answer);
     return;
 }
 void line(void)
@@ -69,13 +79,13 @@ void line(void)
     return;
 }
 void loading_effect(void)
-{ //åƒè€ƒ stackoverflowåŠ ä¿®æ”¹.//https://stackoverflow.com/questions/51983405/loading-dots-effect-with-printf-in-c
+{ //°Ñ¦Ò stackoverflow¥[­×§ï.//https://stackoverflow.com/questions/51983405/loading-dots-effect-with-printf-in-c
     for (int loop = 0; loop < 1; ++loop)
     {
         for (int each = 0; each < 4; ++each)
         {
-            printf("\ræˆ‘æ­£åœ¨ç‚ºä½ ç”¢ç”Ÿæ–°æ•¸å­—%.*s   \b\b\b", each, "...");
-            fflush(stdout); //ç•¶ä¸‹ä¸€æ¬„æ²’æœ‰è¼¸å‡ºï¼ŒåŸ·è¡Œåˆ—å°(priting)ã€‚
+            printf("\r§Ú¥¿¦b¬°§A²£¥Í·s¼Æ¦r%.*s   \b\b\b", each, "...");
+            fflush(stdout); //·í¤U¤@Äæ¨S¦³¿é¥X¡A°õ¦æ¦C¦L(priting)¡C
             sleep(1);
         }
     }
