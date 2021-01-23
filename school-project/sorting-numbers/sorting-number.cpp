@@ -22,14 +22,14 @@ int main(){
     	}
 		cout<<"}";
 		//-----analyzing:
-		for(i=0;i<4;i++){
-			min=i;
-				for(j=min+1;j<5;j++){
-					if(enter[min]>enter[j])
+		for(i=0;i<4;i++){ //i=0
+			min=i;	//min=0
+				for(j=min+1;j<5;j++){ //j=1
+					if(enter[min]>enter[j]) //enter[0]59>enter[1]63
 						min=j;
 			}
-			if(min!=i){
-			temp=enter[i];
+			if(min!=i){ //exclude the situation of min=0,i=1,min=1,i=1
+			temp=enter[i];//the number of receiving temp=59
 			enter[i]=enter[min];
 			enter[min]=temp;
 			}
@@ -40,7 +40,7 @@ int main(){
 		for(int i=0;i<5;i++){
 			cout<<enter[i]<<" ";
 		}
-		cout<<"}"<<endl<<"================\n";
+		cout<<"}"<<endl;
 	//--------option:
 		cout<<"still continue?(y for yes;n for no): ";
 		cin>>option;
